@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="32%" cy="24%" r="85%">
+      <stop offset="0%" stop-color="#212b3a"/>
+      <stop offset="55%" stop-color="#141922"/>
+      <stop offset="100%" stop-color="#070a0e"/>
+    </radialGradient>
+    <linearGradient id="page" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbf4e4"/>
+      <stop offset="100%" stop-color="#ecdfc0"/>
+    </linearGradient>
+    <linearGradient id="pageR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6ecd6"/>
+      <stop offset="100%" stop-color="#e3d3a9"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4cf7e"/>
+      <stop offset="100%" stop-color="#e0a640"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- open book, scaled up from center for a bold, legible silhouette at small sizes -->
+  <g transform="translate(256 248) scale(1.16) translate(-256 -248)">
+    <!-- left page -->
+    <path d="M 256 178
+             C 210 158, 160 150, 118 160
+             C 110 161, 104 168, 104 176
+             L 104 338
+             C 104 346, 110 352, 118 351
+             C 160 344, 210 352, 256 372
+             Z" fill="url(#page)"/>
+    <!-- right page -->
+    <path d="M 256 178
+             C 302 158, 352 150, 394 160
+             C 402 161, 408 168, 408 176
+             L 408 338
+             C 408 346, 402 352, 394 351
+             C 352 344, 302 352, 256 372
+             Z" fill="url(#pageR)"/>
+    <!-- spine shadow -->
+    <path d="M 256 178 L 256 372" stroke="#c9b88c" stroke-width="3" opacity="0.55"/>
+
+    <!-- page lines (left = English, short) -->
+    <g stroke="#b9a06a" stroke-width="5" stroke-linecap="round" opacity="0.55">
+      <line x1="134" y1="206" x2="216" y2="218"/>
+      <line x1="134" y1="228" x2="210" y2="239"/>
+      <line x1="134" y1="250" x2="198" y2="259"/>
+    </g>
+
+    <!-- play triangle cut into the right page, background shows through -->
+    <path d="M 296 214 L 296 306 L 368 260 Z" fill="url(#gold)"/>
+  </g>
+
+  <!-- caption / subtitle strip -->
+  <g>
+    <rect x="166" y="418" width="180" height="16" rx="8" fill="#3fc6c6" opacity="0.9"/>
+    <rect x="198" y="443" width="116" height="11" rx="5.5" fill="#e0a640" opacity="0.85"/>
+  </g>
+</svg>
