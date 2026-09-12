@@ -1,0 +1,19 @@
+{
+  "name": "تعلّم الإنجليزية من الأفلام",
+  "short_name": "تعلّم بالأفلام",
+  "description": "مشغل فيديو تفاعلي لتعلّم الإنجليزية بالترجمة المزدوجة وتكرار الجمل",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c0f14",
+  "theme_color": "#0c0f14",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
